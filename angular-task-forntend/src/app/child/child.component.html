@@ -1,0 +1,12 @@
+<div>
+    <h3>Child Component (OnPush Change Detection)</h3>
+    <p>Parent Primitive Data: {{ primitiveData }}</p>
+    <p>Parent Non-Primitive Data: {{ nonPrimitiveData.value }}</p>
+  
+    <p>Child Primitive Data: {{ childPrimitiveData }}</p>
+    <p>Child Non-Primitive Data: {{ childNonPrimitiveData.value }}</p>
+  
+    <button (click)="updateChildPrimitive()">Update Child Primitive</button>
+    <button (click)="updateChildNonPrimitive()">Update Child Non-Primitive</button>
+  </div>
+  

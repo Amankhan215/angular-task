@@ -1,0 +1,11 @@
+<div>
+    <h2>Parent Component (Default Change Detection)</h2>
+    <p>Primitive Data: {{ primitiveData }}</p>
+    <p>Non-Primitive Data: {{ nonPrimitiveData.value }}</p>
+  
+    <button (click)="updatePrimitive()">Update Primitive</button>
+    <button (click)="updateNonPrimitive()">Update Non-Primitive</button>
+    <button (click)="saveData()">Save Data</button>
+  
+    <app-child [primitiveData]="primitiveData" [nonPrimitiveData]="nonPrimitiveData"></app-child>
+  </div>  
